@@ -63,10 +63,11 @@ def combine_same_rows(x):
     in which one company is acquired by another and drops 
     the observation of acquired company  """
     for row in x: 
-        next_row = x[x.index(row)+1]
-        if not any(next_row[1:]): 
-            row[0] = row[0]+'\\'+ next_row[0]
-            x.pop(x.index(next_row))
+        if row != x[-1]: 
+            next_row = x[x.index(row)+1]
+            if not any(next_row[1:]): 
+                row[0] = row[0]+'\\'+ next_row[0]
+                x.pop(x.index(next_row))
 combine_same_rows(core_table)
 
 # Because some companies have more than one observation and there is no company's 
