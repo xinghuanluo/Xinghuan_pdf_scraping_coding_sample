@@ -1,2 +1,2 @@
 # Xinghuan_pdf_scraping_coding_sample
-This is Xinghuan's public repository for his coding sample of pdf scrapping. I use pdfpluber package of python to scrape an unorganized pdf table without explicity lines between rows and columns. The sample's name is "xh_coding_sample.ipynb" and the original pdf's name is "original_table_pdfplumber.pdf". The name of the scraping output is "output_CWC Software, Inc..csv".
+This is the repository of Xinghuan's coding sample of pdf_scraping. My coding sample is 2 parts. One is for scraping data from the pdf table. The other is for scraping text after all bullet points of one page.
